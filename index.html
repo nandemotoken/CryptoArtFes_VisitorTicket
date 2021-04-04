@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" style="background: #000000;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>CryptoArtFesTicketCenter</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aclonica">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aguafina+Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Butcherman">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caesar+Dressing">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="row">
+        <div class="col" style="background: #000000;">
+            <h1 style="text-align: center;font-family: 'Abril Fatface', cursive;color: rgb(255,152,243);"><strong>CryptoArtFes Visitor NFT</strong><br></h1>
+        </div>
+    </div>
+    <div class="row" style="background: radial-gradient(rgb(79,73,81) 0%, rgb(0,0,0) 80%);">
+        <div class="col">
+            <div style="text-align: center;"><img src="assets/img/entrance.png" style="width: 450px;"></div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="wallet-popup">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">ウォレットを選択</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body">
+                    <div style="text-align: center;"><a href="javascript:loadmm_gasfree()">
+                            <p>MetaMask + mint.nandemotoken.com&nbsp;&nbsp;<img src="assets/img/metamask.png" width="30px"></p>
+                        </a></div>
+                </div>
+                <div class="modal-footer">
+                    <p>ウォレットを選択してください</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="background: #000000;">
+        <div class="col">
+            <div>
+                <h2 style="text-align: center;font-family: Aclonica, sans-serif;color: rgb(255,255,255);margin-top: 10px;">Ticket Center</h2>
+                <p style="color: rgb(255,255,255);text-align: center;">このサイトではCryptoArtFesの来場チケットをNFTで配布しています。<br>美術展の入場チケットを大切に保存するのと同じで、<br>ここに来た『記念』をNFTとして所有することができます。<br></p>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="background: #000000;">
+        <div class="col">
+            <div style="text-align: center;"><a class="btn btn-dark" role="button" style="color: rgb(255,152,243);margin-bottom: 30px;width: 300px;text-align: center;border: 5px solid rgb(255,152,243) ;" href="javascript:walletmodal()">NFTチケットを入手する(無料)<br></a></div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="myinfo">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myinfohead">NFTを発行中…</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body" style="text-align: center;">
+                    <p style="border: 1px solid var(--blue);width: 300px;margin-left: 70px;">ブロックチェーンの確認方法</p><a href="javascript:explorer()"><img src="assets/img/maticexplorer.png" style="width: 200px;"></a><a href="javascript:opensea()" style="margin-left: 30px;"><img src="assets/img/e68241c-opensea-logo-flat-colored-blue.png" style="width: 200px;"></a>
+                </div>
+                <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/abi.js"></script>
+    <script src="https://cdn.ethers.io/lib/ethers-5.0.umd.min.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
